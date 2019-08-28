@@ -1,0 +1,181 @@
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(video/background) no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+header {
+    width: 100%;
+    background-color: darkgrey;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 60%;
+    background-color: darkgrey;
+    position: auto;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    border-width: 3px;
+    margin: auto;
+}
+
+p {
+    background-color: darkgrey;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    border-width: 3px;
+    margin: auto;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    display: grid;
+    grid-area: auto;
+    grid-template-columns: 5fr;
+    grid-template-rows: 1fr;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    width: -1000px;
+    margin-top: -22px;
+    padding: 30px;
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: blue;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: darkgreen;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: red;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+} 
+
+section {
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+h1 {
+    letter-spacing: 2px;
+    margin: 20px;
+    padding: 25px;
+}
+
+h2 {
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+p {
+    letter-spacing: 2px;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+a:link, a:visited {
+    background-color: green;
+    color: white;
+    padding: 30px 50px;
+    text-decoration: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    margin: 20px
+}
+  
+a:hover, a:active {
+    background-color: blue;
+}
+
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 1fr;
+    color: white;
+    font-size: 30px;
+    background-color: red;
+    align-items: center;
+    text-align: center;
+}
